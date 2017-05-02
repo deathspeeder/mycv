@@ -1,0 +1,96 @@
+%# -*- coding:utf-8 -*-
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+\usepackage{fontspec,xunicode}
+\setmainfont{Tahoma}
+\usepackage{xcolor}                 % replace by the encoding you are using
+%\defaultfontfeatures{Mapping=tex-text}
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+%\moderncvtheme[blue,roman]{hht}
+% character encoding
+
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{3.2cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Willard}
+\familyname{Wang}
+%\title{Resume}               % optional, remove the line if not wanted
+\address{School of Software, SJTU}{800 Dongchuan Road, Shanghai, 200240}    % optional, remove the line if not wanted
+\mobile{+86 18964918921}                    % optional, remove the line if not wanted
+%\phone{000-238217878}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{deathspeeder@gmail.com}                     % optional, remove the line if not wanted
+%\extrainfo{www.chinatex.org} % optional, remove the line if not wanted
+\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{China\TeX 您的LaTeX乐园，TeX\&\LaTeX 王国}                 % optional, remove the line if not wante
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%-----------------------------------------
+%            content
+%-----------------------------------------
+\begin{document}
+\maketitle
+
+\section{OBJECTIVE}
+\cvline{}{A software engineering graduate who is keen to find a place in your esteemed company. Eager, enthusiastic and focused. Looking for better developing skills to build an excellent career in software engineering.}
+
+
+\section{EXPERIENCE}
+\cventry{Jan. '09 - Jun. '09}{Member}{The 4th Zhongkong robot competition simulation team}{Hangzhou}{}{Design and implement AI algorithms for several robots. Won Third-Grade Award in the competition. }
+\cventry{Jun. '10 - Oct. '10}{Software Engineer Intern}{Augmentum Software Development (Shanghai) Co., Ltd.}{Shanghai}{}{Implement a testing framework for Windows desktop applications. Fix bugs for advertisement system.}
+\cventry{Sep. '10 - Jun. '11}{Researcher}{Mining software repository for prediction of defects}{ZJU}{}{Research on computing software metrics, mining software repository, and defect prediction method. Improved C4.5 decision tree algorithm, experiment on open-source projects showed that the improved algorithm is better than existing ones. }
+\cventry{Sep. '12 - Dec. '12}{Leader}{Research on Defect Prediction and Test Case Selection (Cooperation with Microsoft) }{SJTU}{}{Apply software defect prediction in test case selection. Slightly improved the efficiency of the selection. }
+\cventry{Sep. '12 - Jun. '13}{PM}{Research Project Management System}{China Telecom (Shanghai)}{}{This project automates the research project management process. After integrated with existing OA systems, it supports functions like process automation, task distribution, document management, .etc. As a PM, I worked on analyzing requirements, designing prototype, implementing project application module and managing project team with 10 members. This project was finally accepted by our customer. }
+\cventry{Sep. '12 - Jun. '13}{Leader}{Common Remote Sensing Data Processing Platform}{SJTU}{}{The platform supports user-define plug-ins while all image processing algorithm are implemented in these plug-ins. Together with proper plug-ins, the platform can identify, display and modify certain targets in the map. I played the chief technical leader in the project and delivered the project successfully. }
+\cventry{Jun. '13 - Jul. '13}{PM Intern}{Microsoft Corporation}{Shanghai}{}{Design and implement a tool comparing the configurations between two server clusters and finally delivered the tool. }
+\cventry{May. '13 - Dec. '13}{Part-time Software Engineer}{TreeLogic Software Engineering}{U.S.A}{}{Automation test for virtual desktop in browser. Develop simulator for Amazon cloud. }
+
+\section{EDUCATION}
+\cventry{Sep. '07 - Jun. '11}{Bachelor}{Zhe Jiang University}{China}{}{Major: Software Engineering}
+\cventry{Sep. '11 - Present}{Master}{Shanghai Jiao Tong University}{China}{}{Major: Software Engineering}
+%\cvline{2011-2014}{上海交通大学，软件学院，计算机科学与技术}
+
+\section{AWARD OPTIONS}
+\cvline{June, 2008}{Third-Class Scholarship for Outstanding Students, ZJU}
+\cvline{June, 2009}{Second-Class Scholarship for Outstanding Students, ZJU}
+\cvline{May, 2009}{National Talent Cultivation Base Scholarship, ZJU}
+\cvline{September, 2009}{Excellent Student Awards, ZJU}
+\cvline{May, 2009}{Third-Grade Award of The 4th Zhongkong Robot Competition}
+\cvline{June, 2010}{Third-Class Scholarship for Outstanding Students, ZJU}
+\cvline{September, 2011}{Second-Class Scholarship for Graduate Students, SJTU}
+\cvline{September, 2012}{Outstanding Graduate Scholarship, SJTU}
+\cvline{September, 2013}{National Scholarship, SJTU}
+
+\section{SKILLS}
+%\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+\cvlistitem{Professional in software repository mining, published paper \textit{Compressed C4.5 Models for Software Defect Prediction} on the 12th International Conference on Quality Software}
+\cvlistitem{Professional in software engineering}
+\cvlistitem{Strong object-oriented analysis and design skills}
+\cvlistitem{Good programming skills in Java, C/C++, C\#}
+\cvlistitem{Fluent in English, and good team player}
+%\cvlistitem{熟练运用PHP、C++、Java、bash等语言，有J2EE和LAMP建站经验}
+%\cvlistitem{熟悉软件项目管理}
+%\cvlistitem{具有扎实的计算机基础知识}
+
+
+\end{document}
+
+
+%% end of file `template_en.tex'.

@@ -1,0 +1,96 @@
+%# -*- coding:utf-8 -*-
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+\usepackage{fontspec,xunicode}
+\setmainfont{Tahoma}
+\usepackage[slantfont,boldfont]{xeCJK}
+\usepackage{xcolor}                 % replace by the encoding you are using
+\setCJKmainfont{Adobe Song Std L}
+%\defaultfontfeatures{Mapping=tex-text}
+%\XeTeXlinebreaklocale "zh"
+%\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+%\moderncvtheme[blue,roman]{hht}
+% character encoding
+
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{王}
+\familyname{俊}
+\title{个人简历}               % optional, remove the line if not wanted
+\address{上海市闵行区东川路800号}{交通大学软件学院}    % optional, remove the line if not wanted
+\mobile{18964918921}                    % optional, remove the line if not wanted
+%\phone{000-238217878}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{deathspeeder@gmail.com}                     % optional, remove the line if not wanted
+%\extrainfo{www.chinatex.org} % optional, remove the line if not wanted
+\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{China\TeX 您的LaTeX乐园，TeX\&\LaTeX 王国}                 % optional, remove the line if not wante
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{自我评价}
+\cvline{}{我具有很强的软件工程专业理论知识，曾担任两个网站开发项目的项目经理并最终获得项目的合格验收；同时在两个关于软件仓库挖掘的学术课题研究上我也获得校优秀并在国际会议上发表论文；我做事认真，勤奋务实，具有很强的责任心和时间观念，完全能够胜任贵公司所提供的开发工作。}
+
+
+\section{项目经验}
+\cventry{2008--2009}{组员}{第四届“中控杯”机器人竞赛仿真组}{浙江大学}{}{设计并实现多个机器人的AI，比赛获得三等奖。}
+\cventry{2010--2011}{研究员}{基于软件仓库的缺陷预测研究}{浙江大学}{}{研究软件指标提取、软件仓库数据挖掘以及缺陷预测方法，并改进了C4.5决策树算法，改进算法用于开源软件上比已有算法的准确率有大幅提升。}
+\cventry{2012, 9--12}{研究员}{与微软合作的研究——缺陷预测与测试集选取}{上海交通大学}{}{将缺陷预测技术用于测试集选取中，略微地提高了选取的效率。}
+\cventry{2012, 9--12}{开发}{遥感数据处理通用基础平台}{上海}{}{设计并实现该平台，支持遥感影响处理以插件形式配置到通用平台上，实现对目标的识别、显示、编辑等功能；项目中负责系统设计以及核心技术开发，最终成功交付产品。}
+\cventry{2012--2013}{项目经理}{上海电信科研项目管理系统}{上海交通大学}{}{该项目需要实现对科研项目管理流程的自动化处理，和已有的办公自动化系统集成后支持流程自动化、任务分发、文档管理等功能；项目中负责分析项目需求，设计系统框架并实现项目申请模块，以及管理10人规模的开发团队，最终项目获得成功验收。}
+
+\section{工作经验}
+\cventry{2010--2011}{实习软件工程师}{群硕软件开发（上海）有限公司}{}{}{实现一个Windows客户端程序的自动化测试框架；广告投放系统的日常缺陷修复。}
+\cventry{2013, 6--7}{PM实习生}{微软}{}{}{设计并实现一个比对两个服务器集群的配置、报告不符合的配置项的工具，最终交付给其他项目组。}
+\cventry{2013, 5--12}{兼职软件工程师}{TreeLogic}{}{}{网页虚拟桌面的自动化测试，开发亚马逊云平台模拟器。}
+
+\section{教育背景}
+\cvline{2007--2011}{浙江大学，软件学院，软件工程}
+\cvline{2011--2014}{上海交通大学，软件学院，计算机科学与技术}
+
+\section{相关奖励}
+\cvline{2008}{浙江大学优秀学生二等奖学金}
+\cvline{2009}{浙江大学优秀学生二等奖学金}
+\cvline{2009}{浙江大学基地奖学金}
+\cvline{2009}{第四届“中控杯”机器人大赛三等奖}
+\cvline{2010}{浙江大学优秀学生三等奖学金}
+\cvline{2011}{上海交通大学研究生二等奖学金}
+\cvline{2012}{上海交通大学优秀研究生奖学金}
+\cvline{2013}{国家奖学金}
+
+\section{相关技能}
+%\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+\cvlistitem{精通软件仓库的缺陷挖掘与预测，第12届国际软件质量大会发表论文《Compressed C4.5 Models for Software Defect Prediction》}
+\cvlistitem{熟练运用C、C++、Java、C\#等语言，有建站及运维经验}
+\cvlistitem{熟悉面向对象分析与设计、具备软件项目管理能力}
+\cvlistitem{具有扎实的计算机基础知识、团队协作能力强}
+
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
